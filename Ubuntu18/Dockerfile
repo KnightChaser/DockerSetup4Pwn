@@ -11,7 +11,9 @@ RUN apt install -y \
     sudo \
     tmux \
     vim \
-    wget
+    wget \
+    unzip \
+    binutils \
     
 # install pwndbg
 WORKDIR /root
@@ -26,8 +28,8 @@ RUN pip3 install pwntools
 
 # install one_gadget command
 RUN gem install one_gadget
-# install patchelf
 
+# install patchelf
 WORKDIR /root
 RUN apt install -y dh-autoreconf
 RUN git clone https://github.com/NixOS/patchelf
