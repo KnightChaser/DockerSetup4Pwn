@@ -25,3 +25,7 @@ python3.8 get-pip.py
 apt-get install gdb -y
 git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
+
+# one_gadget tool installation
+apt-get install ruby -y
+gem install one_gadget
