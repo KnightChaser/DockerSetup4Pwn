@@ -39,3 +39,6 @@ apt-get update
 apt-get install ruby2.4 ruby2.4-dev
 ruby2.4 -v
 gem install one_gadget
+
+# install patchelf
+apt-get install patchelf -y
