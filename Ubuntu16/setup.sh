@@ -1,3 +1,9 @@
+# Before installation, run the minimal update, upgrade and vim to write this shell script
+# because the WSL16 pull basic has nothing.
+#  - apt update
+#  - apt upgrade
+#  - apt install vim
+
 # Basic installation
 cd ~ 
 apt-get update
