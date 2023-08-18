@@ -33,5 +33,9 @@ git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
 
 # one_gadget tool installation
-apt-get install ruby -y
+# In ubuntu16, we need to manually install ruby2.4
+apt-add-repository ppa:brightbox/ruby-ng
+apt-get update
+apt-get install ruby2.4 ruby2.4-dev
+ruby2.4 -v
 gem install one_gadget
