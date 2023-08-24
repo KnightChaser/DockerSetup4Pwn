@@ -1,20 +1,11 @@
 FROM ubuntu:18.04
+
+# basic setup
 ENV PATH="${PATH}:/usr/local/lib/python3.6/dist-packages/bin"
 ENV LC_CTYPE=C.UTF-8
-RUN apt update
-RUN apt install -y \
-    gcc \
-    git \
-    python3 \
-    python3-pip \
-    ruby \
-    sudo \
-    tmux \
-    vim \
-    wget \
-    unzip \
-    binutils \
-    
+RUN apt-get update
+RUN apt-get install -y gcc git python3 python3-pip ruby sudo tmux vim wget unzip binutils
+
 # install pwndbg
 WORKDIR /root
 RUN git clone https://github.com/pwndbg/pwndbg
