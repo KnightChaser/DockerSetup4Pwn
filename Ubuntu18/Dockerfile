@@ -1,8 +1,9 @@
 FROM ubuntu:18.04
 
-# basic setup
+# Basic setup (including changing mirror)
 ENV PATH="${PATH}:/usr/local/lib/python3.6/dist-packages/bin"
 ENV LC_CTYPE=C.UTF-8
+RUN sed -i 's@archive.ubuntu.com@mirror.kakao.com@g' /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y gcc git python3 python3-pip ruby sudo tmux vim wget unzip binutils
 
