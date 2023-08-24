@@ -1,4 +1,2 @@
-CONTAINER_NAME=ubuntu1804forpwn;
-docker build . -t ubuntu1804;
-docker run -d -t --privileged --name=$CONTAINER_NAME ubuntu1804;
-docker exec -it -u root $CONTAINER_NAME bash
+sudo docker pull ubuntu:18.04
+sudo docker run -it -e "TERM=xterm-256color" --rm ubuntu:18.04 bash -l
