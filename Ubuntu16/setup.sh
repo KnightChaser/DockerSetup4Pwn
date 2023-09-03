@@ -43,3 +43,11 @@ gem install one_gadget
 
 # install patchelf
 apt-get install patchelf -y
+
+# install one gadget
+apt-get install software-properties-common -y
+apt-add-repository ppa:brightbox/ruby-ng -y
+apt-get update
+apt-get install ruby2.4 -y
+apt-get install gem -y
+gem install one_gadget
