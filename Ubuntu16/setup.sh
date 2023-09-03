@@ -3,6 +3,7 @@
 #  - apt update
 #  - apt upgrade
 #  - apt install vim
+#  --> apt-get update && apt-get upgrade -y && apt-get install vim -y
 
 # Basic installation
 cd ~ 
