@@ -28,10 +28,13 @@ pip3 install pwntools
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3.8 get-pip.py
 
-# GDB-PEDA
+# GDB-PEDA and heapinfo installations
 apt-get install gdb -y
 git clone https://github.com/longld/peda.git ~/peda
 echo "source ~/peda/peda.py" >> ~/.gdbinit
+cd ~/
+git clone https://github.com/scwuaptx/Pwngdb.git
+cp ~/Pwngdb/.gdbinit ~/
 
 # one_gadget tool installation
 # In ubuntu16, we need to manually install ruby2.4
